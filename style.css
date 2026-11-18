@@ -20,7 +20,7 @@ header{
     border-bottom: 1px solid rgba(0, 0, 0, 0.473);
 }
 .menu{
-    width: 40%;
+    width: 40vh;
 }
 ul{
     display: flex;
@@ -60,7 +60,10 @@ debo hacer que sea un div que crezca horizontalmente
 }
 
 
-
+/*MAIN*/
+main{
+    margin-top: 20px;
+}
 h1{
     color:white; 
     font-size: 600;
@@ -120,9 +123,14 @@ p{color:rgb(124, 123, 123);}
     gap: 10px;
 }
 .tarjeta{
+    width: 25%;
     background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transition: all 400ms ease-in-out;
     img{
+        width: 80%;
         transition: all 400ms ease-in-out;
     }
 }
@@ -147,3 +155,34 @@ p{color:rgb(124, 123, 123);}
     text-align: center;
     border-top: 1px solid rgba(0, 0, 0, 0.473);
 }
+h3{
+    color: white;
+}
+@media (max-width: 768px) {
+    .sect1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+    .proyectos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+    .img{
+    border-radius: 16px;
+    padding: 15px;
+    width: 29vh;
+}
+    .emblema{
+        width: 30vh;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 20vh;
+            height: 20vh;
+        }
+    }
+} 
